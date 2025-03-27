@@ -111,14 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/sensors/config/sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx932x_0.json \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
     vendor/oneplus/guacamoleb/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msmnile.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.gc5035.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.imx371.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx371.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx471.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx481.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx586.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3m5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3m5.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensormodule.gcoreinc_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.gcoreinc_gc5035.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensormodule.semco_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.semco_imx586.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.sensormodule.sunny_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sunny_imx471.bin \
@@ -130,62 +122,75 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.tuned.semco_imx586_18821.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.semco_imx586_18821.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_imx471.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/com.qti.tuned.sunny_imx471_18821.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.sunny_imx471_18821.bin \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.bokeh.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.distortion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.distortion.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.eis.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.memcpy.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.preview.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.rtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.rtb.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.sat.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.snapshotfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.snapshotfusion.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.oneplus.node.supernightraw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.supernightraw.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.localhistogram.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fp_hal_extension.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/goldResult.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/goldResult.bin \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msmnile.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/hw/goodix.fod.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.msmnile.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libarm_proxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_proxy_skel.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ud_hal.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/libhvx_proxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_proxy_stub.so \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so
+    vendor/oneplus/guacamoleb/proprietary/vendor/lib64/goldResult.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/goldResult.bin
+
+PRODUCT_PACKAGES += \
+    audio.primary.msmnile \
+    com.qti.sensor.gc5035 \
+    com.qti.sensor.imx371 \
+    com.qti.sensor.imx471 \
+    com.qti.sensor.imx481 \
+    com.qti.sensor.imx586 \
+    com.qti.sensor.s5k3m5 \
+    com.oneplus.node.bokeh \
+    com.oneplus.node.distortion \
+    com.oneplus.node.eis \
+    com.oneplus.node.memcpy \
+    com.oneplus.node.preview \
+    com.oneplus.node.rtb \
+    com.oneplus.node.sat \
+    com.oneplus.node.snapshotfusion \
+    com.oneplus.node.supernightraw \
+    com.qti.camx.chiiqutils \
+    com.qti.eisv2 \
+    com.qti.eisv3 \
+    com.qti.hvx.addconstant \
+    com.qti.hvx.binning \
+    com.qti.node.depth \
+    com.qti.node.dummyrtb \
+    com.qti.node.dummysat \
+    com.qti.node.eisv2 \
+    com.qti.node.eisv3 \
+    com.qti.node.fcv \
+    com.qti.node.gpu \
+    com.qti.node.memcpy \
+    com.qti.node.remosaic \
+    com.qti.node.stich \
+    com.qti.node.swregistration \
+    com.qti.stats.aec \
+    com.qti.stats.aecwrapper \
+    com.qti.stats.af \
+    com.qti.stats.afd \
+    com.qti.stats.afwrapper \
+    com.qti.stats.asd \
+    com.qti.stats.awb \
+    com.qti.stats.awbwrapper \
+    com.qti.stats.haf \
+    com.qti.stats.hafoverride \
+    com.qti.stats.localhistogram \
+    com.qti.stats.pdlib \
+    com.qti.stats.pdlibsony \
+    com.qti.stats.pdlibwrapper \
+    com.qtistatic.stats.aec \
+    com.qtistatic.stats.af \
+    com.qtistatic.stats.awb \
+    com.qtistatic.stats.pdlib \
+    com.vidhance.stats.aec_dmbr \
+    libdepthmapwrapper \
+    fp_hal_extension \
+    camera.qcom \
+    com.qti.chi.override \
+    goodix.fod.msmnile \
+    libarm_proxy_skel \
+    libgf_ud_hal \
+    libhvx_proxy_stub \
+    libmdmdetect_vendor \
+    libmdmimgload \
+    liboemnvbk_img_helper \
+    sensors.ssc \
+    ks \
+    mdm_helper
